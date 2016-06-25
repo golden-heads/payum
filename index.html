@@ -1,0 +1,17 @@
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+<script>
+        var active = window.location;
+        $('a[href^="/'+ active[1] +'.html"]').addClass('active');
+        console.log(active);
+</script>
+
+
+<style>
+.active {
+background-color: yellow;
+}
+</style>
+
+
+  <a href="/index.html">Главная</a>
+  <a href="/albums.html">Альбомы</a>
